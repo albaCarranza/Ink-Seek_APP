@@ -1,0 +1,11 @@
+<section class="cards">
+    <ng-container *ngIf="selectedDayCitas && selectedDayCitas.length > 0">
+      <div class="cita-card" *ngFor="let cita of selectedDayCitas">
+        <button (click)="goModificar()">
+          <p class="cliente">Cliente: {{ cita.name }} {{ cita.last_name }}</p>
+          <p>Hora: {{ cita.hora.slice(0, 5) }}</p>
+          <p>Especificaciones: {{ cita.asunto }}</p>
+        </button>
+      </div>
+    </ng-container>
+</section>

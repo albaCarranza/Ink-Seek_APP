@@ -1,0 +1,43 @@
+<main class="contenedor">
+  <section class="mes" [ngClass]="{ 'centered-title': !is_Tatuador }">
+    <div class="flecha1" (click)="changeMonth(-1)"><img src="/assets/images/Arrow 3.png" alt=""></div>
+    <p class="nombre_mes" style="font-weight: bold">{{ viewDate | date: 'MMMM' }}</p>
+    <div class="flecha2" (click)="changeMonth(1)"><img src="/assets/images/Arrow 2.png" alt=""></div>
+    <a *ngIf="is_Tatuador" class="mas" (click)="goAdd()"><img src="/assets/Calendario/simbolo de mas.png" alt=""></a>
+  </section>
+  <section class="dia">
+    <div class="dias__item">L</div>
+    <div class="dias__item">M</div>
+    <div class="dias__item">X</div>
+    <div class="dias__item">J</div>
+    <div class="dias__item">V</div>
+    <div class="dias__item" style="color: var(--principal);">S</div>
+    <div class="dias__item" style="color: var(--principal);">D</div>
+  </section>
+
+  <div class="calendario">
+    <div class="calendario__dia" *ngFor="let day of calendarDays">
+      <ng-container *ngIf="day.date">
+        <a href="#" [ngClass]="{'current-date': isSameDate(day.date, currentDate), 'has-citas': day.hasCitas, 'active': isSameDate(day.date, selectedDay?.date)}" [style.color]="getTextColor(day)" (click)="handleDayClick(day)">
+          <span class="day-number">{{ day.date | date: 'd' }}</span>
+          <div class="dot" *ngIf="day.hasCitas"></div>
+        </a>
+      </ng-container>
+    </div>    
+  </div>
+  <div class="cards">
+  <ng-container *ngIf="selectedDayCitas && selectedDayCitas.length > 0">
+    <div class="cita-card" *ngFor="let cita of selectedDayCitas">
+      <button (click)="goModificar(cita.id_cita)">
+        <p class="cliente">
+          <ng-container *ngIf="is_Tatuador; else tatuadorText">Cliente</ng-container>
+          <ng-template #tatuadorText>Tatuador</ng-template>
+          : {{ cita.name }} {{ cita.last_name }}
+        </p>
+        <p>Hora: {{ cita.hora.slice(0, 5) }}</p>
+        <p>Especificaciones: {{ cita.asunto }}</p>
+      </button>
+    </div>
+  </ng-container>
+</div>
+</main>

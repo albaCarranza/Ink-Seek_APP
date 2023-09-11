@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato,wght@1,300&family=Poppins:wght@100;200;600&display=swap');
+
+a
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+    max-width: 390px;
+    min-height: auto;
+}
+    :root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris1: #212121;
+    --gris2: #838383;
+    --gris3: #b3b3b3;
+    --principal: #1db954;
+    --gristablon: #3a3a3a;
+}
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    background-color: var(--gris1);
+    min-height: auto;
+    height: 1130px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;    
+}
+
+.recomendaciones .texto1{
+    /* border: 2px solid blue; */
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.texto1 p{
+    color: var(--gris3);
+}
+
+h2{
+    color: var(--principal);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;   
+
+    font-weight: 300;
+}
+
+.consejos{
+    /* border: 2px solid blue; */
+    color: var(--gris3);
+    padding-right: 20px;
+    padding-left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 22px;
+
+    position: relative;
+}
+
+.consejospadre{
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.iconos{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+    width: 60px;
+    align-items: center;
+    padding-right: 6px;
+
+    position: relative;
+     
+}
+
+.i1{
+    /* border: 2px solid green; */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i2{
+    /* border: 2px solid green; */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i3{
+    /* border: 2px solid green; */
+    height: 103px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i4{
+    /* border: 2px solid green; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i5{
+    /* border: 2px solid green; */
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i6{
+    /* border: 2px solid green; */
+    height: 89px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i7{
+    /* border: 2px solid green; */
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.i8{
+    /* border: 2px solid green; */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.iconos .i1 i,
+.iconos .i2 i,
+.iconos .i3 i,
+.iconos .i4 i,
+.iconos .i5 i,
+.iconos .i6 i,
+.iconos .i7 i,
+.iconos .i8 i {
+  font-size: 22px; 
+}
+
+.CREMAHIDRATANTE, .LIMPIA, .PRENDAS, .DEPORTE, .SOL, .NO, .VERANO, .BAÑOS{
+    color: var(--principal);
+    font-style: italic;
+}
+
+.MANTENERELAREA, .UTILIZAR, .EVITARLAS, .EVITAR, .PROTEGERLO, .ZONA, .EVITAR, .APLAZA{
+    color: white;
+    font-style: italic;
+}

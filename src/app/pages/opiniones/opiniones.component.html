@@ -1,0 +1,37 @@
+
+   <div class="opinion">
+    <div class="text"> M i s <span class="opiniones">&nbsp; o p i n i o n e s </span> </div>
+  
+    <div><img src="./assets/images/flecha-atras.png" alt="" routerLink="/profile-tatuador-propia" routerLinkActive="active" class="atras"></div>
+  
+    <div *ngFor="let opinion of opiniones; let i = index" class="card">
+      <div class="card2">
+        <div class="perfil"><img src="{{opinion.photo}}"></div>
+        <div class="nombre">{{opinion.name}}</div>
+      </div>
+  
+      <div class="estrellas">
+        <img *ngIf="opinion.puntuacion >= 1" src="/assets/iconos/Star 1.png">
+        <img *ngIf="opinion.puntuacion >= 2" src="/assets/iconos/Star 1.png">
+        <img *ngIf="opinion.puntuacion >= 3" src="/assets/iconos/Star 1.png">
+        <img *ngIf="opinion.puntuacion >= 4" src="/assets/iconos/Star 1.png">
+        <img *ngIf="opinion.puntuacion >= 5" src="/assets/iconos/Star 1.png">
+      </div>
+  
+      <div class="text2">{{opinion.comentario}}</div>
+  
+      <div *ngIf="opinion.respuestaTatuador">
+        <div class="respuesta-tatuador">{{opinion.respuestaTatuador}}</div>
+      </div>
+  
+      <img src="./assets/iconos/responder.png" alt="Responder" (click)="toggleShowInput(i)"class="img-responder" />
+  
+      <div *ngIf="showInput[i]">
+        <input type="text" [(ngModel)]="respuestaTatuador" placeholder="Deja tu respuesta..." />
+        <button class="btn_" (click)="enviarRespuesta(opinion, respuestaTatuador)">ENVIAR</button>
+      </div>
+    </div>
+  
+    <img src="./assets/images/flecha-atras.png" alt="" routerLink="/profile-tatuador-propia" routerLinkActive="active" class="atras">
+  </div>
+  

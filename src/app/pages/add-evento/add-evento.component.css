@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+*{
+    font-family: 'Lato' sans-serif;
+}
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--negro);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 300;
+    color : var(--gris3);
+    padding-top: 80px;
+    padding-left: 25px;
+    padding-right: 20px;
+
+}
+.boton{
+right: 10px;
+}
+
+.inputs{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 300;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    color: var(--gris3);
+}
+.inputs input{
+    height: 50px;
+    background: var(--gris1);
+    border-radius: 36px;
+    border: 1px solid var(--principal);
+    color: var(--gris3);
+    font-size: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.back{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+h1{
+    font-family: 'Lato' sans-serif;
+    font-weight: lighter;
+
+}
+
+.logo img{
+    margin-bottom: 200px;
+    background-color: var(--negro);
+    position: absolute;
+    bottom: -200px;
+    scale: 0.75;
+    margin-left: 20px;
+}
+.logo{
+    background-color: var(--negro);
+}
+.margenY{
+margin-right: 30px;
+margin-top: 8px;
+}
+.exit{
+    width: 6%;
+    height: 3%;
+    position: absolute;
+    
+}
+input::-webkit-calendar-picker-indicator {
+    color: var(--gris3);
+    background-image: url('/assets/iconos/Vector.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px; 
+    height: 24px;
+    opacity: 1; 
+    cursor: pointer; 
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+  }
+  
+  
+  .boton-galeria-img {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .imagen-seleccionada {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+  }

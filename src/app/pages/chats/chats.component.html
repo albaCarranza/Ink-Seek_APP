@@ -1,0 +1,23 @@
+<main>
+    <div class="buscador">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Buscar..." #newID>
+          <button (click) ="encontrado(newID)" class="boton-buscar"><img src="/assets/img/lupa-gris.png" alt="Lupa" class="lupa-img"></button>
+        </div>
+      </div>
+
+            <div class="chats" *ngFor="let conversacion of chats" >
+                <div class ="chatPapa">
+                <button class = "chat" (click)="goMensajes(conversacion)"  >
+
+                    <div class="chat-foto"><img src="{{conversacion.photo}}" alt=""></div>
+                    <div class ="chat-nombre">{{conversacion.name}}</div>
+                
+                 <img src="/assets/chat-registro/Communication-gris.png" class="caja-logo" alt="">
+               
+                </button>
+                <button class = "cerrar" (click)="deleteChat(conversacion)"><img src="./assets/delete.png" alt=""></button>
+            </div>
+            </div>
+
+</main>

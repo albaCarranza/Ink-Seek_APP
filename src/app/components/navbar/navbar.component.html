@@ -1,0 +1,24 @@
+<div class="navbar">
+  <div class="buttons" [ngClass]="{'centered-icons': !is_Tatuador}">
+    <a routerLink="/calendario" routerLinkActive="active" (click)="setActiveLink('/calendario')">
+      <img src="/assets/iconos/Vector.png" alt="calendario" *ngIf="!isActiveLink('/calendario')">
+      <img src="/assets/iconos/Vector1.png" alt="calendario" *ngIf="isActiveLink('/calendario')">
+    </a>
+    <a routerLink="/descubrir-artista" routerLinkActive="active" (click)="setActiveLink('/descubrir-artista')">
+      <img src="/assets/iconos/magnify-expand.png" alt="busqueda" *ngIf="!isActiveLink('/descubrir-artista')">
+      <img src="/assets/iconos/magnify-expand1.png" alt="busqueda" *ngIf="isActiveLink('/descubrir-artista')">
+    </a>
+    <a routerLink="/camara" routerLinkActive="active" *ngIf="is_Tatuador" (click)="setActiveLink('/camara')">
+      <img src="/assets/iconos/camera-plus-outline.png" alt="camara" *ngIf="!isActiveLink('/camara')">
+      <img src="/assets/iconos/camera-plus-outline1.png" alt="camara" *ngIf="isActiveLink('/camara')">
+    </a>
+    <a routerLink="/tablon" routerLinkActive="active" (click)="setActiveLink('/tablon')">
+      <img src="/assets/iconos/bulletin-board.png" alt="tablon" *ngIf="!isActiveLink('/tablon')">
+      <img src="/assets/iconos/bulletin-board1.png" alt="tablon" *ngIf="isActiveLink('/tablon')">
+    </a>
+    <a routerLink="/chats" routerLinkActive="active" (click)="setActiveLink('/chats')">
+      <img src="/assets/iconos/chat-processing-outline.png" alt="chat" *ngIf="!isActiveLink('/chats')">
+      <img src="/assets/iconos/chat-processing-outline1.png" alt="chat" *ngIf="isActiveLink('/chats')">
+    </a>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="fondo">
+    <!-- Resto del código -->
+    <div class="centro">
+        <div class="foto">
+          <div>
+            <img [src]="selectedImage || usuario.photo" alt="" class="profileimg">
+          </div>
+        </div>
+        <div class="user-form" *ngIf="!is_Tatuador">
+            <input type="file" accept="image/*" (change)="onFileSelected($event)" #inputFile style="display: none;">
+            <label class="name-label-nombre">Foto</label>
+            <input type="text" [(ngModel)]="selectedImage" placeholder=" ">
+            <img *ngIf="!selectedImage" src="/assets/iconos/galeria.png" alt="Abrir Galería" class="boton-galeria-img" (click)="inputFile.click()">
+            <label class="name-label-nombre">Nombre</label>
+            <input type="text" [(ngModel)]="usuario.name" name="name" placeholder="Nombre">
+            <label class="name-label-apellidos">Apellidos</label>
+            <input type="text" [(ngModel)]="usuario.last_name" name="last_name" placeholder="Apellidos">
+            <label class="name-label-email">Email</label>
+            <input type="text" [(ngModel)]="usuario.email" name="email" placeholder="Email">
+            <label class="name-label-contraseña">Contraseña</label>
+            <input type="text" [(ngModel)]="usuario.password" name="password" placeholder="Contraseña">
+            <div class="checkUser">
+                <button routerLink="/edit-profile-tatuador" routerLinkActive="active" class="usuario" (click)="guardarCambios()">
+                  <img src="./assets/Vector.png" alt="">
+                </button>
+              </div>    
+        </div>
+        <div class="tatuador-form" *ngIf="is_Tatuador">
+            <input type="file" accept="image/*" (change)="onFileSelected($event)" #inputFile style="display: none;">
+            <label class="name-label-nombre">Foto</label>
+            <input type="text" [(ngModel)]="selectedImage" placeholder=" ">
+            <img *ngIf="!selectedImage" src="/assets/iconos/galeria.png" alt="Abrir Galería" class="boton-galeria-img" (click)="inputFile.click()">
+            <label class="name-label-nombre">Nombre</label>
+            <input type="text" [(ngModel)]="usuario.name" name="name" placeholder="Nombre">
+            <label class="name-label-nombre">AKA</label>
+            <input type="text" [(ngModel)]="usuario.nickname" name="nickname" placeholder="AKA">
+            <label class="name-label-apellidos">Apellidos</label>
+            <input type="text" [(ngModel)]="usuario.last_name" name="last_name" placeholder="Apellidos">
+            <label class="name-label-email">Email</label>
+            <input type="text" [(ngModel)]="usuario.email" name="email" placeholder="Email">
+            <label class="name-label-email">Estudio</label>
+            <input type="text" [(ngModel)]="usuario.studio" name="studio" placeholder="Estudio">
+            <label class="name-label-email">Estilo</label>
+            <input type="text" [(ngModel)]="usuario.style" name="style" placeholder="Estilo">
+            <label class="name-label-email">Descripción</label>
+            <textarea [(ngModel)]="usuario.descripcion" name="descripcion" class="descripcion-input" placeholder="Descripción"></textarea>
+            <label class="name-label-contraseña">Contraseña</label>
+            <input type="password" [(ngModel)]="usuario.password" name="password" placeholder="Contraseña">
+            <div class="checkTatuador">
+                <button routerLink="/edit-profile-tatuador" routerLinkActive="active" class="usuario" (click)="guardarCambios()">
+                  <img src="./assets/Vector.png" alt="">
+                </button>
+              </div>
+    </div>
+</div>

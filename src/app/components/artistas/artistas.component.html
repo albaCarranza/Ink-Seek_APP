@@ -1,0 +1,15 @@
+    <div class="artista">
+      <a (click)="verPerfil()">
+        <div class="artista-info">
+          <div class="perfil-foto">
+            <img [src]="artistaPadre.photo" alt="Foto de Perfil" class="foto-perfil"/>
+          </div>
+          <div class="info">
+            <p class="perfil-nombre" class="nickname"><strong>{{ artistaPadre.nickname }}</strong></p>
+            <p class="perfil-nombre" class="estilo-studio">Estilo: {{ artistaPadre.style }}</p>
+            <p class="perfil-nombre" class="estilo-studio">Estudio: {{ artistaPadre.studio }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+

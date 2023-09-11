@@ -1,0 +1,28 @@
+<main>
+    <div class="descripcion">
+    
+        <div class="txt1">¡Bienvenidos a <span class="editar">INK-SEEK</span>, la aplicación definitiva para los amantes de los tatuajes! Nos enorgullece ser tu compañero de confianza en el apasionante mundo del arte corporal.<br>
+
+            En Ink-Seek, entendemos que tu piel es un lienzo para expresar tu individualidad y contar tu historia. Nuestra misión es ayudarte a encontrar el artista perfecto y el diseño ideal para crear obras maestras que te acompañarán toda la vida.<br>
+            
+            Únete a nuestra comunidad apasionada de amantes de los tatuajes. 
+            
+                </div>
+        <div class="iconos">
+            <div class="icono_Fb"><img src="/assets/about-us/icons8-facebook-48.png" alt=""></div>
+            <div class="icono_Ig"><img src="/assets/about-us/icons8-instagram-48.png" alt=""></div>
+        </div>
+    </div>
+    <div class="cartas">
+        <div class="titulo">EQUIPO <span class="editar">INK-SEEK</span></div>
+        <div class="card" *ngFor="let card of cards">
+            <div class="img">
+                <img src={{card.photo}} alt="">
+            </div>
+            <div class="contenido">
+            <div class="title">{{card.name}}</div>
+            <div class="desc">{{card.description}}</div>
+            </div>
+        </div>     
+    </div>
+</main>

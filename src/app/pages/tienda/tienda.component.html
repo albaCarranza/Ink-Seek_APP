@@ -1,0 +1,29 @@
+<!-- <ng-container *ngFor="let prenda of prendas">
+  <div class="prenda">
+      <div class="image"><img class="imagen" src="{{prenda.photo}}"></div>
+      <span class="title">{{prenda.title}}</span>
+  </div>
+</ng-container> -->
+<main>
+  <div class="add-search">
+    <div><img  src="./assets/images/flecha-atras.png" alt="" routerLink="/profile-tatuador-propia" routerLinkActive="active" class="atras"></div>
+    <div class="buscador">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Buscar..." #id_prenda>
+        <button class ="boton-lupa"><img src="/assets/img/lupa-gris.png" alt="Lupa" class="lupa-img" (click)="find(id_prenda)"></button>
+      </div>
+    </div>
+    <div class="mas" (click)="goAdd()" *ngIf="is_Tatuador">
+      <img src="/assets/Calendario/simbolo de mas.png" alt="">
+    </div>
+  </div>
+  <div class="card-container">
+    <div *ngFor="let prenda of prendas" class="card">
+      <div class="image">
+        <button  *ngIf="is_Tatuador" class="buter" type="button" (click)="deleteProducto(prenda)">X</button>
+        <img class="imagen" src="{{prenda.photo}}">
+      </div>
+      <p class="title" >{{prenda.name}}</p>
+    </div>
+  </div>
+</main>

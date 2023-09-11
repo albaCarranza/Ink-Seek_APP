@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+
+.background-black{
+    background-color: var(--negro);
+    min-height: 100vh;
+}
+
+.background-image {
+    background-image: url('/assets/images/mariposilla_solita.png'); 
+    background-repeat: no-repeat;
+    background-position: center top -40px;
+    background-size: cover;
+  }
+  
+.inkseek{
+    margin-top: 70px;
+}
+
+span{
+    color: var(--principal);
+    font-family: 'Lato', sans-serif;
+}
+.tatuador{
+    position: absolute;
+    width: 334px;
+    height: 65px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--blanco);
+    background-color: transparent;
+    border: none;
+    animation: borderAnimation 3s 0.5s ease forwards;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 333px;
+    height: 68px;
+    left: 30px;
+    top: 500px;
+    border-radius: 20px;
+    
+}
+
+.tatuante{
+    position: absolute;
+    width: 334px;
+    height: 66px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: var(--blanco);
+    background-color: transparent;
+    border: none;
+    animation: borderAnimation 3s 1s ease forwards;
+    z-index: 2;
+    box-sizing: border-box;
+    left: 29px;
+    top: 590px;
+    border-radius: 20px;
+}
+
+
+
+@keyframes borderAnimation {
+    0% {
+      border: 2px solid transparent;
+    }
+    100% {
+      border: 2px solid var(--principal);
+    }}

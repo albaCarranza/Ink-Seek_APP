@@ -1,0 +1,15 @@
+<div class="artista-container">
+  <div class="buscador">
+    <div class="input-wrapper">
+      <input type="text" placeholder="Buscar..." [(ngModel)]="inputValue" (keyup)="getTatuador(inputValue)">
+      <button class="bedit" type="button">
+          <img src="/assets/img/lupa-gris.png" alt="Lupa" class="lupa-img">
+        </button>
+    </div>
+  </div>
+  <div class="artistas">
+    <ng-container *ngFor="let artista of userService.artistas">
+        <app-artistas [artistaPadre] = "artista" (click)="mostrarPerfil(artista)"></app-artistas>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="fondo">
+  <div class="cajaNueva">
+    <div class="line1">
+      <div class="profileimg">
+        <img class="photo" [src]="user.photo" alt="">
+      </div>
+      <div class="editar">
+        <a routerLink="/edit-profile-tatuador">
+          <div class="boton" routerLinkActive="active">
+            <img src="./assets/editarp.png" alt="" class="bedit">
+          </div>
+        </a>
+      </div>
+      <div class="valoracion">
+        <a routerLink="/opiniones">
+          <div class="star-rating">
+            <span class="stars-outer">
+              <span class="stars-inner">
+                <!-- Primero mostramos la estrella vacía con el borde -->
+                <i class="empty-star"></i>
+                <!-- Luego mostramos las estrellas según la puntuaciónMedia -->
+                <i [ngClass]="starClasses[i]" *ngFor="let star of [0, 1, 2, 3, 4]; let i = index"></i>
+              </span>
+            </span>
+          </div>
+        </a>
+        <div class="puntuacion-media" *ngIf="puntuacionMedia !== undefined">{{ puntuacionMedia.toFixed(1) }} de 5</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line2">
+    <div class="name">
+      <h3>{{ user.nickname }}</h3>
+    </div><br>
+    <div class="descrip">
+      <p>{{ user.descripcion }}</p>
+    </div>
+    <div class="tienda">
+      <a (click)="goTienda(user.id_user)">
+        <p routerLinkActive="active"><br></p>
+      </a>
+    </div>
+  </div>
+  
+  <div class="artista-card" *ngFor="let photo of user.publicaciones">
+    <div class="foto">
+      <button class="buter" type="button" (click)="deleteCardPerfil(photo)">X</button>
+      <img [src]="photo.photo" alt="Foto">
+    </div>
+  </div>
+</div>

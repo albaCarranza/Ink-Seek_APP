@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+.fondo{
+  min-height: 100vh;
+  width: 100%;
+  background-color:var(--gris1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.centro{
+    min-height: 650px;
+    width: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    /* height: 150px;
+    width: 100%; */
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.exit{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:75px;
+    left:20px;
+}
+
+.editarEmoji{
+    height: 40px;
+    position: absolute;
+    top:180px;
+    right:100px;
+}
+
+.user-form{
+  padding-bottom: 150px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    padding-top:20px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tatuador-form{
+  padding-bottom: 150px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    padding-top:20px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+label{
+  width: 100px;
+}
+
+.profileimg{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.checkTatuador{
+
+  position: absolute;
+  top:1100px;
+  right: 38px;
+  margin-bottom: 70px;
+}
+
+.tatuador{
+  background-color: transparent;
+  border: none;
+  position:absolute;
+  right: 10px;
+  top:120px
+  
+}
+
+.usuario{
+  background-color: transparent;
+  border: none;
+  
+}
+
+.checkUser{
+
+    position: absolute;
+    top:700px;
+    right: 38px;
+    margin-bottom: 70px;
+}
+
+p{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+  .tatuador-form input[type="text"],
+  .tatuador-form input[type="password"] {
+    width: 307px;
+    height: 30px;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gris3);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 18px;
+  }
+
+  .user-form input[type="text"],
+  .user-form input[type="password"] {
+    width: 307px;
+    height: 30px;
+    margin-bottom: 40px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gris3);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 18px;
+  }
+
+  .tatuador-form  input[type="text"]::placeholder,
+  .tatuador-form  input[type="password"]::placeholder {
+    border: none;
+  }
+
+ 
+
+  .user-form  input[type="text"]::placeholder,
+  .user-form  input[type="password"]::placeholder {
+    border: none;
+  }
+
+  .name-label-email {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 268px;
+  } 
+
+  .name-label-nombre {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 255px;
+
+  } 
+  .name-label-apellidos {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 250px;
+  }
+  .name-label-contraseña {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 155px;
+    
+    width:150px;
+  } 
+  .name-label-contraseña2 {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 155px;
+    width:150px;
+  } 
+
+  .tatuador-form  input[type="text"]:focus,
+  .tatuador-form  input[type="password"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--principal); 
+  }
+
+  .user-form  input[type="text"]:focus,
+  .user-form  input[type="password"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--principal); 
+  }
+
+  .invalid-feedback{
+    color: var(--blanco)
+  }
+
+  textarea[type="text"] {
+    width: 307px;
+    height: 60px;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gris3);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 18px;
+  }
+
+  textarea[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--principal); 
+  }
+
+  textarea[type="text"]::placeholder {
+    border: none;
+  }
+  .boton-galeria-img {
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        top: 245px;
+      }
+      
+
+ 
+  

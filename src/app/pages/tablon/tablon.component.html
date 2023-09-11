@@ -1,0 +1,29 @@
+<div class="eventos-container">
+  <div class="add-search">
+    <div class="buscador">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Buscar..." [(ngModel)]="search" (keyup)="searchEvent()">
+        <img src="/assets/img/lupa-gris.png" alt="Lupa" class="lupa-img">
+      </div>
+    </div>
+    <div class="mas" (click)="goAdd()" *ngIf="is_Tatuador">
+      <img src="/assets/Calendario/simbolo de mas.png" alt="">
+    </div>
+  </div>
+    <div class="eventos-lista">
+      <div class="evento-card" *ngFor="let evento of eventos">
+        <div class="foto">
+          <button class="buter" type="button" (click)="deleteEvent(evento)" *ngIf="evento.id_user === id_user">X</button> 
+          <img [src]="evento.photo" alt="Foto del evento" />
+          
+        </div>
+        <div class="contenido">
+          <h3>{{ evento.title }}</h3>
+          <p>Inicio {{ evento.fecha_inicio | date: 'dd/MM/yy' }}</p>
+          <p>Final {{ evento.fecha_final | date: 'dd/MM/yy' }}</p>
+          <p>{{ evento.place }}</p>
+          
+        </div>
+      </div>
+  </div>
+</div>

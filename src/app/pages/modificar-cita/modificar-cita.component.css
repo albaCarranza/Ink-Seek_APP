@@ -1,0 +1,133 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    font-family: 'Lato' sans-serif;
+}
+.contenedor{
+    padding-top:60px;
+    max-height: 800px;
+    width: 100%;
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 300;
+    color : var(--gris3);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.eliminar{
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border:1px solid var(--gris3);
+    color: var(--gris3);
+    position: absolute;
+    right: 20px;
+}
+.Text{
+    margin: 5px;
+}
+
+.inputs{
+    
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--gris3);
+    gap:15px;
+    z-index: 1;
+}
+.inputs input{
+    height: 50px;
+    background: var(--gris1);
+    border-radius: 36px;
+    border: 1px solid var(--principal);
+    font-size: 15px;  
+    padding-left: 20px; 
+    color: white;
+}
+
+.back{    
+    height: 343px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    position:relative;
+    margin-bottom: 50px; 
+    
+    background-image: url("/assets/Calendario/polilla.png");
+    background-position: 25px ;    
+    background-repeat: no-repeat;  
+}
+
+.tick{ 
+    margin-left:350px;
+    z-index: 10;
+    margin-bottom: 90px;
+    position:absolute;
+    top:405px;
+}
+
+h1{
+    font-family: 'Lato' sans-serif;
+    font-weight: lighter;
+}
+
+.logo{
+    margin-left: 25px;
+    z-index: 0;
+}
+.margenY{
+    margin-right: 30px;
+    margin-top: 8px;
+
+    }
+    .exit{
+        width: 6%;
+        height: 3%;
+        margin-top: 10px;  
+    }
+    .cruz{
+        position:absolute;
+        right: 12px;
+        top:85px;
+        z-index:999;
+    }
+    .atras{
+        width: 25px;
+        margin-top:10px
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 30px;
+        height: 30px;
+        padding-right: 15px;
+        color: var(--principal);
+        cursor: pointer;
+        border: var(--principal);
+      }
+      .contenedor input[type="time"]::-webkit-calendar-picker-indicator {
+        width: 30px;
+        height: 30px;
+        padding-right: 15px;
+        color: var(--principal);
+        cursor: pointer;
+        border: var(--principal);
+      }
+      
+    

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 500px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
+}
+
+.mariposa {
+  position: absolute;
+  bottom: -390px;
+  width: 100%;
+  animation: volar 3s 0.5s forwards;
+}
+
+.titulo {
+  padding-top: 20vh; /* Ajusta el valor para controlar la distancia del título desde la parte superior */
+  opacity: 0;
+  width: 100%;
+  animation: aparecer 5s 1.5s forwards;
+}
+
+.formulario {
+  opacity: 0;
+  padding-top: 10vh; /* Ajusta el valor para controlar la distancia del formulario desde la parte superior */
+  animation: aparecer 2s 2.5s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Resto del código CSS sin cambios */
+
+
+  @keyframes volar {
+    0% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-85vh); 
+    }
+    100% {
+      transform: translateY(-85vh); 
+    }
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .formulario input[type="text"],
+  .formulario input[type="password"] {
+    width: 307px;
+    height: 30px;
+    margin-bottom: 40px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 18px;
+  }
+  
+  .formulario input[type="text"]::placeholder,
+  .formulario input[type="password"]::placeholder {
+    opacity: 0;
+    border: none;
+  }
+  
+  .name-label-email {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 270px;
+    
+  } 
+  .name-label-contraseña {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-right: 235px;
+    
+  } 
+  
+  
+  .formulario input[type="text"]:focus,
+  .formulario input[type="password"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--principal); 
+  }
+  
+  .formulario button.boton {
+    width: 177px;
+    height: 52px;
+    background-color: var(--principal);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  p{
+    padding-top: 15px;
+    font-size: 14px;
+    color: var(--blanco);
+  }
+  a{
+    color: var(--principal);
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.invalid-feedback {
+  color: var(--blanco);
+  position:relative;
+    bottom:20px;
+}
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  

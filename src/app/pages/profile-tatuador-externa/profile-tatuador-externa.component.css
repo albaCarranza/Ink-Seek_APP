@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.fondo {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--gris1);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  
+  align-items: center;
+
+
+}
+
+.cajaNueva{
+  /* border: 2px solid red; */
+  /* height: 100%; */
+  width: 90%;
+  margin-top: 70px; 
+}
+
+
+.star-rating .stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  font-size: 24px;
+  color: var(--gris1);
+}
+
+
+.fas.fa-star {
+  color: var(--principal);
+  border: none;
+}
+
+.fas.fa-star.star-85:before,
+.fas.fa-star.star-75:before,
+.fas.fa-star.star-65:before,
+.fas.fa-star.star-55:before,
+.fas.fa-star.star-45:before,
+.fas.fa-star.star-35:before,
+.fas.fa-star.star-25:before,
+.fas.fa-star.star-15:before {
+  content: "\f005";
+  position:relative;
+  top: 0;
+  left: 0;
+  color: var(--principal);
+}
+
+.fas.fa-star.star-85:before {
+  clip-path: polygon(0 0, 85% 0, 85% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-75:before {
+  clip-path: polygon(0 0, 75% 0, 75% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-65:before {
+  clip-path: polygon(0 0, 65% 0, 65% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-55:before {
+  clip-path: polygon(0 0, 55% 0, 55% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-45:before {
+  clip-path: polygon(0 0, 45% 0, 45% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-35:before {
+  clip-path: polygon(0 0, 35% 0, 35% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-25:before {
+  clip-path: polygon(0 0, 25% 0, 25% 100%, 0% 100%);
+}
+
+.fas.fa-star.star-15:before {
+  clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
+}
+
+.puntuacion-media {
+  margin-top: 30px;
+  color: var(--principal);
+  font-size: 20px;
+}
+
+.line1 {
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 100%;
+ margin-top: 0;
+
+  /* margin-right: 25px;
+  margin-left: 20px; */
+   display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+.photo{
+  /* border: 2px solid magenta; */
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+
+
+/* .imagen {
+  border: solid yellow;
+   border-radius: 100px;
+  height: 100%;
+  width: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+} */
+
+/* .profileimg {
+  border: 2px solid red;
+  height: 75%;
+  width: 80%;
+  border-radius: 100px;
+} */
+/* img{ */
+  /* height:  200px; */
+  /* width: 100%; */
+  /* border-radius: 50%; */
+
+/* } */
+
+.editar {
+  /* border: 2px solid yellow; */
+  position:absolute;
+  /* margin-left: 120px; */
+  margin-bottom: 100px;
+  top: 100;
+  margin-right: 65px;
+  margin-top: 30px;
+}
+
+
+
+.info1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  /* border: solid 3px pink; */
+}
+
+.valoracion {
+  height: 30px;
+  width: 150px;
+  margin-right: 0px;
+  margin-left: 40px;
+  /* position: absolute; */
+  margin-top: 35px;
+  top: 100px;
+  right: 0px;
+  scale: 0.9;
+
+  /* border: solid 3px blue; */
+
+}
+
+.line2 {
+  height: 12%;
+  width: 80%;
+  margin-top: 15px;
+  margin-right: 35px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.name {
+  height: 10%;
+  width: 80%;
+}
+
+.descrip {
+  height: auto;
+  width: 80%;
+}
+
+.line3 {
+  height: 55%;
+  width: 100%;
+}
+img {
+  max-height: 100%;
+  max-width: auto;
+
+}
+
+.bedit {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  position:absolute;
+  top:90px;
+  border:none;
+  scale:1.2;
+}
+
+p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  margin-bottom:20px;
+}
+
+h3 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.artista-card {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  margin: 15px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px var(--black);
+  background-color: var(--gristablon);
+  color: var(--gris3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artista-card:last-child {
+  margin-bottom: 90px;
+}
+
+.foto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+  .buter{ 
+    background-color:var(--gristablon) ;
+    color: var(--gris3);
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    border: transparent;
+    font-size: 14pt;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+
+} 
+
+.chat {  
+  height: 30px;
+  width: 30px;
+  background-image:url("src/assets/iconos/chat-processing-outline1.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  border: 1px solid var(--principal);
+  border-radius: 7px;
+  background-position: center;
+  margin-right: 2px;
+}
+
+.tienda {
+  height: 30px;
+  width: 30px;
+  background-image:url("src/assets/iconos/camisetita.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  border: 1px solid var(--principal);
+  border-radius: 7px;
+  background-position: center;
+ 
+}
+
+
+.emojis{
+ position: absolute;
+ height: 80px;
+ display:flex;
+ flex-direction: column;
+ justify-content: space-between;
+ right: 40px;
+ top:200px
+}

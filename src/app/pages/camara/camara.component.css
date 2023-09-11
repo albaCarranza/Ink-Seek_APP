@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  background-color: var(--negro);
+}
+
+.video-container {
+  position: relative;
+  width: 350px;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.hacerFoto {
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  height: 120px;
+  width: 120px;
+  margin-left: 90px;
+}
+.galeria{
+  margin-left: 40px;
+}
+
+.file-input {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: var(--negro);
+  padding: 5px;
+  border-radius: 5px;
+  width: 370px;
+  text-align: center;
+  height: 85vh;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.modal-content h2 {
+  margin-bottom: 30px;
+  color: var(--gris3);
+  font-size: 35px;
+}
+
+.selected-photo {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.cruz{
+  position:absolute;
+  right: 80px;
+  top:620px;
+  z-index:10;
+  height: 40px;
+  width: 40px;
+}
+.tick{ 
+  z-index: 10;
+  margin-bottom: 90px;
+  position:absolute;
+  top:620px;
+  left: 80px;
+  height: 40px;
+  width: 40px;
+}

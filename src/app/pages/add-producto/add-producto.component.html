@@ -1,0 +1,26 @@
+<main class="contenedor">
+    <section class="head">
+      <h1 class="Text">Nueva prenda</h1>
+      <div class="margenY">
+        <div class="exit">
+          <img src="./assets/delete.png" alt="" routerLink="/tienda" class="cruz" routerLinkActive="active" class="cruz">
+        </div>
+      </div>
+    </section>
+    <section class="inputs">
+      <div style="display: flex; align-items: center;">
+        <input type="file" accept="image/*" (change)="onFileSelected($event)" #inputFile style="display: none;">
+        <label for="inputFile">
+          <input type="text" [value]="selectedImage || ''" placeholder="    Foto de la prenda" readonly style="width: 350px;">
+          <img *ngIf="selectedImage" [src]="selectedImage" alt="Imagen seleccionada" class="imagen-seleccionada" style="margin-left: 10px; max-height: 100px;">
+          <img *ngIf="!selectedImage" src="/assets/iconos/galeria.png" alt="Abrir Galería" class="boton-galeria-img" (click)="inputFile.click()">
+        </label>
+      </div>
+      <input type="text" placeholder="    Descripción" #inputName style="width: 350px;">
+    </section>
+    <div>
+      <a (click)="addProducto(inputName)"><img src="/assets/Calendario/Vector.png" alt="" class="tick"></a>
+    </div>
+    <section class="back"></section>
+  </main>
+  

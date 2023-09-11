@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    font-family: 'Lato' sans-serif;
+}
+
+.artista{
+    width: 370px;
+    height: 120px;
+    margin: 15px 10px;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--black);
+    background-color: var(--gristablon);
+  
+}
+.foto-perfil{
+    width: 75%;  
+    height: 80%;
+    object-fit: cover;
+    border-radius: 150px;   
+}
+.perfil-foto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 30%;
+    height: 100px;
+    margin-right: 5px;
+
+}
+
+.artista-info{
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.info{
+    width: 75%;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    color: var(--gris3);
+}
+
+.nickname{
+    font-size: 20px;
+    margin: 0;
+}
+
+.estudio-style{
+    font-size: 19px;
+    margin: 8px 0;
+}

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    max-width: 100%;
+    min-height: 60px;
+
+}
+
+
+:root {
+    --negro: #000000;
+    --gris1: #212121;
+    --gris2: #838383;
+    --gris3: #b3b3b3;
+    --principal: #1db954;
+    --gristablon: #3a3a3a;
+}
+
+
+.header img {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.hamburguesa {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 75px;
+    /* border: 2px solid red; */
+
+}
+
+.inkseek {
+    margin-top: 5px;
+}
+
+.img-perfil {
+    border: solid 1px var(--principal);
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin-left: 70px;
+    margin-top: 6px;
+    margin-right: 8px;
+    border: 2px solid var(--principal);
+    overflow: auto;
+}
+
+.img-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* //menú hamburguesita */
+.header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    width: 150px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    border-top: 1px solid var(--principal);
+}
+
+.header input[type="checkbox"] {
+    position: absolute;
+    box-sizing: border-box;
+    margin-right: 320px;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+
+    /* border: 2px solid red; */
+
+
+
+}
+
+
+.header input[type="checkbox"] {
+    opacity: 0;
+
+}
+
+.header {
+    position: relative;
+    background: var(--negro);
+    min-height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 2;
+}
+
+.header nav {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    top: 48px;
+
+
+    display: block;
+}
+.contenido{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(60, 60, 60, 0.9), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+
+
+.difuminado {
+    filter: blur(5px);
+  }
+
+.boton-hamburguesa{
+    border-style: none;
+    background:none;
+    min-height: 48px;
+}

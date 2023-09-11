@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--gris1);
+    padding-top: 70px;
+    overflow-y: auto;
+    padding-bottom: 70px;
+}
+.buscador {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(29, 185, 84, 0.3));
+  height: 45px;
+  width: 250px;
+  border: 0.1px solid var(--gristablon);
+  border-radius: 5px;
+  color: var(--blanco);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.input-wrapper .lupa-img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  right: 5px;
+}
+  
+    
+  
+  
+  .evento-card {
+    width: 370px;
+    height: 120px;
+    margin: 15px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--black);
+    background-color: var(--gristablon);
+    color: var(--gris3);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .foto {
+    width: 120px;
+    height: 110px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .contenido {
+    flex: 1;
+  }
+  
+  .contenido h3 {
+    font-size: 17px;
+    padding-left: 10px;
+  }
+  
+  .contenido p {
+    font-size: 15px;
+    margin: 4px 0;
+    padding-left: 10px;
+  }
+
+
+  .mas{
+    padding-top: 20px;
+    margin-left: 320px;
+    position:absolute;
+    }
+    .add-search{
+      padding-top:5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .buter{ 
+      background-color:rgb(179, 179, 179,0.8) ;
+      color: red;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      border: transparent;
+      font-size: 14pt;
+      font-weight: bold;
+      position: absolute;
+}

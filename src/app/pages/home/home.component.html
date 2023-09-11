@@ -1,0 +1,15 @@
+<div class="artista-container">
+  <div class="buscador">
+    <div class="input-wrapper">
+      <input type="text" placeholder="Buscar..." [(ngModel)]="search" (keyup)="searchHome()" >
+      <img src="/assets/img/lupa-gris.png" alt="Lupa" class="lupa-img"  >
+    </div>
+  </div>
+  <div class="card">
+    <ng-container *ngFor="let publicacion of homeService.publicaciones">
+      <div class="card-container">
+        <app-home-card [publicacionPadre]="publicacion" (click)="mostrarPerfil(publicacion)"></app-home-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

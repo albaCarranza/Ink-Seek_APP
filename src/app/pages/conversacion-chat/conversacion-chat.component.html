@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<main class="contenedor">
+    <!-- <div class="header">{{user.name}}</div> -->
+
+    <div class="chat-container">
+
+        <div class="chat-box">
+            <div class="user">
+
+                <button class="cerrar" (click)="goChats()">
+                    <i class="fa-solid fa-arrow-left" style="color: #1db954;"></i></button>
+                <img src="{{chatService.chat.photo}}" alt="foto" (click) ="verPerfil()" />
+                <div class="user-info">
+                    <h2>{{chatService.chat.name}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="chats">
+
+
+            <div id="contenedor_conversacion" class="contenedor_conversacion" >
+                <p #mensaje *ngFor="let mensaje of mensajes" class="msj" 
+                    [ngClass]="(this.userService.user.id_user==mensaje.id_participante)? 'tatuador-chat' : 'user-chat'">
+
+                    {{mensaje.mensaje}}
+                </p>
+                <div class="msj_ocultar user-chat" #mensaje ></div>
+                <div class="msj_ocultar user-chat" #mensaje></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="input-container">
+        <input type="text" class="chat" placeholder="Escribe tu mensaje" (keydown.enter)="enviarMensaje(mensajeID)"
+            [(ngModel)]="nuevoMensaje" #mensajeID>
+        <button type="button" (click)="enviarMensaje(mensajeID)">Enviar</button>
+    </div>
+
+</main>

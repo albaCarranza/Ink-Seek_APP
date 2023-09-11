@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    font-family: 'Lato' sans-serif;
+}
+.contenedor{
+    width: 100%;
+    background: var(--negro);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+ 
+}
+
+.head{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 300;
+    color : var(--gris3);
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+
+.Text{
+    margin: 5px;
+}
+
+.inputs{
+   
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--gris3);
+    gap:15px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs input{
+    color: white;
+    height: 50px;
+    background: var(--gris1);
+    border-radius: 36px;
+    border: 1px solid var(--principal);
+    font-size: 15px;
+    padding: 20px;
+}
+
+.back{    
+    height: 343px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    position:relative;
+    margin-bottom: 50px; 
+    background-image: url("/assets/Calendario/polilla.png");
+    background-position: 25px ;    
+    background-repeat: no-repeat;  
+}
+
+.tick{ 
+    margin-left:350px;
+    z-index: 10;
+    margin-bottom: 90px;
+    position:absolute;
+    top:360px;
+}
+
+h1{
+    font-family: 'Lato' sans-serif;
+    font-weight: lighter;
+}
+
+.logo{
+    margin-left: 25px;
+    z-index: 0;
+}
+.margenY{
+    margin-right: 30px;
+    margin-top: 8px;
+    }
+    .exit{
+        width: 6%;
+        height: 3%;
+        margin-top: 10px;  
+    }
+    .cruz{
+        position:absolute;
+        right: 12px;
+        top:85px;
+        z-index:999;
+    }
+      
+      .input-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex: 1;
+      }
+      
+      
+      .boton-galeria-img {
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+      }
+      
+      .imagen-seleccionada {
+        max-width: 100%;
+        max-height: 300px;
+        margin-top: 10px;
+      }
+      
+    

@@ -1,0 +1,26 @@
+<div class="header">
+  <input type="checkbox" [(ngModel)]="mostrarContenido">
+  <button (click)="toggleHamburguesa()" id="hamburguesa" class="boton-hamburguesa">
+    <img src="/assets/img/pngwing.com.png" class="hamburguesa">
+  </button>
+
+  <nav>
+    <ul>   
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>  
+      <li><a routerLink="/calendario" routerLinkActive="active">Citas</a></li>
+      <li><a routerLink="/tablon" routerLinkActive="active">Tablón</a></li>
+      <li><a routerLink="/chats" routerLinkActive="active">Chat</a></li>
+      <li><a routerLink="/recomendaciones" routerLinkActive="active">Tips</a></li>
+      <li><a routerLink="/aboutUs" routerLinkActive="active">Sobre nosotros</a></li>
+      <li><a routerLink="/on-boarding" routerLinkActive="active">Guía de uso</a></li>
+      <li><a routerLink="/login" routerLinkActive="active">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <img src="/assets/img/Header defi copia.png" class="inkseek" (click)="goHome()" class="boton">
+  <div class="img-perfil"><img class="img-perfil2" src={{this.user.photo}} (click)="goPerfil()" ></div>     
+</div>
+
+<div class="contenido" [ngClass]="{'difuminado': mostrarContenido}" *ngIf="mostrarContenido" (click)="toggleHamburguesa()" appCerrarMenu>
+  
+</div>

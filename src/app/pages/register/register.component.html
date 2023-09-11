@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="background"><img src="../../../assets/images/parober.png" alt="" class="fondo"></div>
+  <img src="/assets/images/mariposilla solita copia.png" alt="mariposa" class="mariposa">
+  <div class="content">
+    <img class="inkseek" src="/assets/images/name-preRegister.png">
+    <div [formGroup]="registro" class="formulario">
+      <label class="name-label-nombre">Nombre</label>
+      <input type="text" placeholder=" " formControlName="nombre"
+        [ngClass]="{'is-invalid': registro.get('nombre').invalid && (registro.get('nombre').dirty || registro.get('nombre').touched)}">
+      <div *ngIf="registro.get('nombre').invalid && (registro.get('nombre').dirty || registro.get('nombre').touched)" class="invalid-feedback">
+        El nombre es necesario
+      </div>
+      <label class="name-label-apellidos">Apellidos</label>
+      <input type="text" placeholder=" " formControlName="apellido"
+        [ngClass]="{'is-invalid': registro.get('apellido').invalid && (registro.get('apellido').dirty || registro.get('apellido').touched)}">
+      <div *ngIf="registro.get('apellido').invalid && (registro.get('apellido').dirty || registro.get('apellido').touched)" class="invalid-feedback">
+        El apellido es necesario
+      </div>
+      <label class="name-label-email">Email</label>
+      <input type="text" placeholder=" " formControlName="correo"
+        [ngClass]="{'is-invalid': registro.get('correo').invalid && (registro.get('correo').dirty || registro.get('correo').touched)}">
+      <div *ngIf="registro.get('correo').invalid && (registro.get('correo').dirty || registro.get('correo').touched)" class="invalid-feedback">
+        <div *ngIf="registro.get('correo').errors?.['required']">La dirección de email es obligatoria</div>
+        <div *ngIf="registro.get('correo').errors?.['email']">Dirección email incorrecta</div>
+      </div>
+      <label class="name-label-contraseña">Contraseña</label>
+      <input type="password" placeholder=" " formControlName="contraseña"
+        [ngClass]="{'is-invalid': registro.get('contraseña').invalid && (registro.get('contraseña').dirty || registro.get('contraseña').touched)}">
+      <div *ngIf="registro.get('contraseña').invalid && (registro.get('contraseña').dirty || registro.get('contraseña').touched)" class="invalid-feedback">
+        <div *ngIf="registro.get('contraseña').errors?.['required']">La contraseña es obligatoria</div>
+        <div *ngIf="registro.get('contraseña').errors?.['minlength']">La contraseña debe tener al menos 8 caracteres</div>
+        <div *ngIf="registro.get('contraseña').errors?.['maxlength']">La contraseña debe tener máximo 16 caracteres</div>
+      </div>
+      <label class="name-label-contraseña2">Confirma contraseña</label>
+      <input type="password" placeholder=" " formControlName="contraseña2"
+        [ngClass]="{'is-invalid': registro.get('contraseña2').invalid && (registro.get('contraseña2').dirty || registro.get('contraseña2').touched)}">
+      <div *ngIf="registro.get('contraseña2').invalid && (registro.get('contraseña2').dirty || registro.get('contraseña2').touched)" class="invalid-feedback">
+        <div *ngIf="registro.get('contraseña2').errors?.['required']">La contraseña es obligatoria</div>
+        <div *ngIf="!registro.get('contraseña2').errors?.['required'] && registro.get('contraseña2').errors?.['matchPassword']">Las contraseñas no coinciden</div>
+      </div>
+      <button (click)="register()" [disabled]="registro.invalid" class="boton">Sign up</button>
+      <p>¿Tienes cuenta?</p>
+      <a routerLink="/login">Sign in</a>
+    </div>
+  </div>
+</div>

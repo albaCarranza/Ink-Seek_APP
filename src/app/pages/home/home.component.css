@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+.artista-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: var(--gris1);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buscador {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(29, 185, 84, 0.3));
+  height: 45px;
+  width: 250px;
+  border: 0.1px solid var(--gristablon);
+  border-radius: 5px;
+  color: var(--blanco);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.input-wrapper .lupa-img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  right: 5px;
+}
+  
+  .artista-card {
+    position: relative;
+    width: 380px;
+    height: 500px;
+
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--black);
+    background-color: var(--gristablon);
+    color: var(--gris3);
+    display: flex;
+    align-items: flex-end;
+  }
+  .card {
+    gap: 20px;
+    margin-top: 30px;
+    background-color: var(---gris3);
+  }
+  
+  .card:last-child{
+    margin-bottom: 90px;
+  }
+ 
+  

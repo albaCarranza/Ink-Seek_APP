@@ -1,0 +1,11 @@
+<div class="foto">
+    <div>
+      <img [src]="publicacionPadre.photo" alt="Foto" />
+      <a (click)="verPerfil()" class="perfil-info">
+        <div class="perfil-foto">
+          <img [src]="publicacionPadre.photoPerfil" alt="Foto de Perfil" />
+        </div>
+        <p class="perfil-nombre">{{ publicacionPadre.user_name }}</p>
+    </a>
+    </div>
+  </div>

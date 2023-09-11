@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+    max-width: 390px;
+    min-height: auto;}
+    :root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris1: #212121;
+    --gris2: #838383;
+    --gris3: #b3b3b3;
+    --principal: #1db954;
+    --gristablon: #3a3a3a;
+}
+a{
+    text-decoration: none;
+}
+

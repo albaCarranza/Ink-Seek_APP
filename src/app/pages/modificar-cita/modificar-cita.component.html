@@ -1,0 +1,24 @@
+<main class="contenedor">
+    <section class="head">
+      <div><img src="./assets/images/flecha-atras.png" alt="" routerLink="/calendario" routerLinkActive="active" class="atras"></div>
+      <h1 class="Text">Modificar cita</h1>
+      <div class="margenY">
+        <button (click)="eliminarCita()" class="eliminar">Eliminar</button>
+      </div>
+    </section>
+  
+    <section class="inputs">
+      <input type="text" placeholder="Asunto" [(ngModel)]="cita.asunto">
+      <input type="text" placeholder="Correo electrónico" [(ngModel)]="cita.email">
+      <input type="date" placeholder="Fecha" class="fecha" [ngModel]="cita.fecha | date:'yyyy-MM-dd'">
+      <input type="time" placeholder="Hora" class="hora" [(ngModel)]="cita.hora">
+    </section>
+  
+    <div>
+      <button (click)="guardarCambios()">
+        <img src="/assets/Calendario/Vector.png" alt="" class="tick" />
+      </button>
+    </div>
+    <section class="back"></section>
+  </main>
+  

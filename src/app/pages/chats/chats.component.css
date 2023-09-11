@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&display=swap') format("truetype");
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+* {
+    font-family: "Lato" sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--negro);
+}
+
+.buscador {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-buscar{
+    background: none;
+    border: none;
+}
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(29, 185, 84, 0.3));
+    height: 45px;
+    width: 250px;
+    border: 0.1px solid var(--gristablon);
+    border-radius: 5px;
+    color: var(--blanco);
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.input-wrapper .lupa-img {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    right: 5px;
+}
+
+.chats {
+    /* border: 2px solid red; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.chatPapa {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.chat {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 90%;
+    background: none;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: 2px solid var(--gris2);
+    z-index: 1;
+}
+
+.chat button {
+    width: 100%;
+    background: none;
+}
+
+
+
+.caja-logo {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+/* .chat-foto {
+    width: 100px;
+    height: 45px;
+    left: 30px;
+    top: 257px;
+    /* border: 2px solid white; */
+/* padding-left: 20px; */
+/* margin-top: 18px;
+    margin-left: 18px;
+}  */
+.chat-foto img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.chat-nombre {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 170px;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.caja-logo {
+    position: absolute;
+    height: 40px;
+    right: 40px;
+    margin-bottom: 20px;
+}
+
+.cerrar {
+    z-index: 5;
+    margin-bottom: 80px;
+    border: none;
+    background: none;
+}

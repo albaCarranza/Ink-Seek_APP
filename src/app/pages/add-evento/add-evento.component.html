@@ -1,0 +1,33 @@
+<main class ="contenedor">
+    <section class="head">
+        <h1 class ="Text" >Nuevo evento</h1>
+        <div class="margenY">
+            <div class="exit"> <img src="./assets/delete.png" alt="" routerLink="/tablon" routerLinkActive="active"></div>
+        </div>
+    </section>
+
+    <section class ="inputs">
+        <div style="display: flex; align-items: center;">
+            <input type="file" accept="image/*" (change)="onFileSelected($event)" #inputFile style="display: none;">
+            <label for="inputFile">
+              <input type="text" [value]="selectedImage || ''" placeholder="    Cartel del evento" class="imput" style="width: 350px;">
+              <img *ngIf="selectedImage" [src]="selectedImage" alt="Imagen seleccionada" class="imagen-seleccionada" style="margin-left: 10px; max-height: 100px;">
+              <img *ngIf="!selectedImage" src="/assets/iconos/galeria.png" alt="Abrir Galería" class="boton-galeria-img" (click)="inputFile.click()">
+            </label>
+          </div>
+        <input type="text" placeholder="Nombre del evento"[(ngModel)]="title" name="title" class="imput">
+        <input type="date" placeholder="fecha inicio" [(ngModel)]="fecha_inicio" name="fecha_inicio" class="imput">
+        <input type="date" placeholder="Fecha fin "[(ngModel)]="fecha_final" name="fecha_final" class="imput"> 
+        <input type="text" placeholder="Lugar del evento"[(ngModel)]="place" name="place" class="imput"> 
+
+    </section>
+
+
+    <section class ="back" (click)="postEvent()">
+            <img src="/assets/Calendario/Vector.png" alt="" >
+
+    </section>
+        <div class ="logo">
+            <img  src="/assets/Calendario/polilla.png" alt="">
+        </div>
+</main>

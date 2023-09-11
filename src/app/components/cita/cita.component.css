@@ -1,0 +1,36 @@
+
+*{
+    font-family: 'Lato', sans-serif;
+      color: var(--gris2);
+}
+
+
+.cards {
+   display: flex;
+   flex-direction: column;
+   margin:5px;
+   align-items: center;
+}
+.cliente{
+   font-size: 20px;
+   
+}
+.content{  
+   width: 336px;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+   background-color: var(--gris1);
+   border-radius: 10px;
+   padding-left: 10px;
+}
+
+button{
+   font-size: 1em;
+   color: white;
+   background-color: transparent;
+   border-style: none;
+   box-shadow: inset 0,0,0,0 var(--gris2);
+}

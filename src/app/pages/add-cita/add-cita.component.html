@@ -1,0 +1,24 @@
+<main class="contenedor">
+    <section class="head">
+      <h1 class="Text">Nueva cita</h1>
+      <div class="margenY">
+        <div class="exit">
+          <img src="./assets/delete.png" alt="" routerLink="/calendario" routerLinkActive="active" class="cruz" />
+        </div>
+      </div>
+    </section>
+  
+    <section class="inputs">
+      <input type="text" placeholder="Asunto" [(ngModel)]="cita.asunto" name="asunto" />
+      <input type="text" placeholder="Correo electrónico" [(ngModel)]="cita.email" name="email" />
+      <input type="date" placeholder="Fecha" class="fecha" [(ngModel)]="cita.fecha" name="fecha" />
+      <input type="text" placeholder="Hora" [(ngModel)]="cita.hora" name="hora" />
+    </section>
+    
+    <div>
+      <button (click)="agregarCita()">
+        <img src="/assets/Calendario/Vector.png" alt="" class="tick" />
+      </button>
+    </div>
+    <section class="back"></section>
+  </main>
