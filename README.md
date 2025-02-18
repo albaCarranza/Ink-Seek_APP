@@ -2,27 +2,67 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
-## Development server
+## Descripción
+**Ink-Seek** es una aplicación diseñada para conectar tatuadores con entusiastas del tatuaje. Permite a los usuarios explorar artistas, agendar citas, compartir opiniones y descubrir eventos exclusivos del mundo del tatuaje. Con una interfaz intuitiva y un diseño atractivo, Ink-Seek ofrece una experiencia fluida y eficiente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características
 
-## Code scaffolding
+- **Registro rápido y personalizado**: Adaptado para clientes y tatuadores.
+- **Explora tatuadores**: Accede a portafolios y sigue a tus artistas favoritos.
+- **Gestión de citas**: Agenda y administra tus citas directamente desde la app.
+- **Opiniones y calificaciones**: Comparte y revisa experiencias con tatuadores.
+- **Feed personalizado**: Descubre contenido adaptado a tus preferencias.
+- **Cámara integrada**: Captura y publica imágenes de tatuajes en tu perfil.
+- **Eventos y tienda**: Encuentra eventos y compra merchandising exclusivo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologías Usadas
 
-## Build
+- **Frontend**:
+  - **Angular**: Framework para la construcción de interfaces web dinámicas.
+  - **HTML / CSS / Bootstrap**: Diseño atractivo y responsivo.
+  - **TypeScript**: Lenguaje que mejora la robustez del código JavaScript.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Backend**:
+  - **Node.js & Express.js**: Servidor rápido y escalable.
+  - **JavaScript**: Lenguaje de programación principal.
 
-## Running unit tests
+- **Despliegue y Herramientas**:
+  - **Amazon Web Services (AWS)**: Infraestructura en la nube.
+  - **Postman**: Pruebas de API.
+  - **Git / GitHub**: Control de versiones y colaboración.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalación
 
-## Running end-to-end tests
+Sigue estos pasos para instalar y ejecutar la aplicación localmente:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/albaCarranza/Ink-Seek_APP.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-## Further help
+## Comandos disponibles
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# Ink-Seek_APP" 
+Ejecuta la aplicación en entorno local:
+   ```bash
+   npm start
+   ```
+Visita [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación en funcionamiento.
+
+## Manual de Usuario
+
+Los usuarios pueden interactuar con la aplicación de la siguiente manera:
+
+- **Registro y perfil**: Completa tu información y preferencias.
+- **Explorar tatuadores**: Busca artistas según estilo y ubicación.
+- **Agendar citas**: Usa el calendario para coordinar sesiones.
+- **Publicar tatuajes**: Sube imágenes de tus tatuajes.
+- **Interacción en la comunidad**: Deja opiniones y calificaciones.
+
+## Contacto
+
+Equipo de desarrollo de **Ink-Seek**
+
